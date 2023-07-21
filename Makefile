@@ -5,7 +5,7 @@ LDFLAGS=-lpthread
 TARGET=stream
 
 # if both m5ops_header_path and m5_build_path are defined, we build the STREAM b
-enchmark with the m5 annotations
+# enchmark with the m5 annotations
 ifneq ($(M5_BUILD_PATH),)
 	CXXFLAGS += -I$(M5OPS_HEADER_PATH)
 	CXXFLAGS += -O -DGEM5_ANNOTATION=1
